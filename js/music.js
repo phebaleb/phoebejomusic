@@ -10,84 +10,84 @@ const songs = [
     id: 1,
     name: "All This Noise",
     year: "2020",
-    imageURL: "images/all_this_noise-cover.jpg",
+    imageURL: "images/all_this_noise-cover.png",
     lyrics: "It gets a little crazy here in this world. I get claustrophobic being just one girl. Satellites are swarming overhead. Boats and trains tumble past my bed. Planes carry millions of lives led, straight into the lake. It’s more than I can take. Valley of the sinners, land of no winners, someone fly me out of here. All this noise drives me further than my mind is full. All this noise makes me wish for dreams that make me a fool. The sea’s a little greener here in this place; green of envy, the currents pick up the pace. Beholders of the dreams untold, Valleys of wonderers to scared to hold the fairytale they’re being sold. Stories they’re believing, eyes begin deceiving."
   },
   {
     id: 2,
     name: "Anymore",
     year: "2020",
-    imageURL: "images/anymore-cover.jpg",
+    imageURL: "images/anymore-cover.png",
     lyrics: "I’ve been hurt in my life too many times to count, seen things too vile for any sane mind not to doubt. Bad dreams are all it leaves me now, carrying to everyone I meet a shadow from the stars. I’ve been caught in debris after running from a bomb, saw the spiritual casualties that washed up on the rocks. Lie to me - that’s what they all do best, and that’s the sugar coated tip of the iceberg I repress. Cutting up my life like a magazine. Pasting all the parts together that don’t make me scream. They aren’t my problem anymore. They aren’t my problem since I walked out that door. I don’t talk about it to save me from the hurt. I’ve got so much love now, sifted from the dirt."
   },
   {
     id: 3,
     name: "Her",
     year: "2020",
-    imageURL: "images/her-cover.jpeg",
+    imageURL: "images/her-cover.png",
     lyrics: "Liked by everyone, but she is loved by no one. Surrounded by distractions, she will always sleep alone. She’s got an icy glare like the prick of a thorn, mesmerising the weak behind her devil horns. I see them cry but never speak, but its kind of funny to see them fall so easy. Never wants to know you 'less she wants something from you, but hey, what can I do. She puts up a smile but I’ll always see through. Liked by everyone, but she is loved by no one. She’s the queen right now, but no one knows where she’s going. They don’t even know about the people worth knowing, but i guess that it’s fair ‘cause I don’t see them either when I see you. I used to cry when the facts were bleak, but its kinds of funny, how sad you made me honey."
   },
   {
     id: 4,
     name: "Dead Leaf Echo",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "Baby, oh, having big damn heart just gets too damn hard. I was so broken and hid out on my own little planet amongst the stars. Sailing away, oh! Where love is liquor and art is meth - right here in my pretty head. All I ever wanted was to see life in red. I wanna forget it all, but when I do there’s nothing left but to fall. I’m a dead-leaf-echo of what I used to be, when you were you, baby, and I was me. Baby, oh, wanting to be a better me is making me go insane, and no matter how hard I try, it seems there’s no pinning down a girl like me. Sweet controversy, no! You cannot fix a girl like me. Why can’t I even want myself? I’ve disappeared inside myself."
   },
   {
     id: 5,
     name: "Warm Skin",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "I tilted my head back ‘til the water soaked my hair clips. It seems that even the rain wants to kiss my lips. I’m just lying here watching the sky fall, feelings all the things there are to be felt, thinking all the things there are to be thought. I tilted my head back ‘til the waves were upside down. They seem like the dark clouds that swim behind my eyes. I’m just lying here watching the sky fall, feelings all the things there are to be felt, thinking of the things that aren’t to be thought. When you talk to me, I tell myself to look you in the eye, but I can’t help but look down when I get shy. I’m just sitting there, leaning against the wall, listening to the things that I’m meant to be, ignoring all the things that you want from me. I know you think I'm dumb, ‘cause I’m smart but I’m not going to “smart school”, but money can’t buy freedom and you don’t see why it can’t buy love."
   },
   {
     id: 6,
     name: "Currently Gone",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "I thought about it when he asked for my number, but how could I dip my toes in the water? I don’t want the salt, I just want the sugar. So I sit on the shore, watching, just watching. Why am I so unsure of this, when all the signs have drawn to yes? I can’t breathe 'cause I fear that when you look at me, I won’t be there. You can try your best to change the world but you can only change how you see it. When I think too much, you tell me not to worry. The future, what a bore. What am I here for? And after all this time, I'm leaving you behind. A piece of your heart will live on in my puzzled mind."
   },
   {
     id: 7,
     name: "Around Town",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "How does it take just two eyes of brown to crush me like a lemon ‘til my heart hits the ground. My highschool heart looks so stupid, now - isn't it funny how these thngs turn around? It’s been a while since someone held on me that way. You like my art and my music, what can I say? He said you’re killing it, and though he’s not the first one, I said you’re killing me, but the words didn’t leave my mouth. Please don't forget me, otherwise I'll lose myself again. Biggest heart in town and it stops when I see you driving around town. How did it take just two eyes of blue to look me in the eye and turn me into someone new? Do you care for me because you really want to? Or is it only 'cause you’re paid to? How is it, darling, that you gone and got the most popular car to exist, oh my god? The way i pay attention to the teeny-tiny things gets the bestest of me comes back to clip my wings."
   },
   {
     id: 8,
     name: "Misinformation",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "How can I trust anyone when I’ve just got done stitching up my last wounds? How did I know good from wrong when my ****** ran off with another man? What should I look like? What should I wear? Who can I relate to? Who should I fear? Misinformation. How can I trust a man when I’ve seen only the worstest from my friends? How can I trust far lands hen they’re run by xenophobic men? If I’m just a child, then I must be dumb, dumb. So my dreams are too wild? Well, it's better than having none."
   },
   {
     id: 9,
     name: "Strawberry & Sorrow Pie",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "I can be one way and I can be another. Sifting in the flour or mixing in the butter. God, you're a drag with your little name tag. Put me in a box with a ribbon on top and I'll tear that sh*t right off. Just a teenage mess with a soft heart. Don't you know, you're a diamond and I'm in the rough? Take another slice of my Strawberry and Sorrow Pie. I could have been yours, but you're not my flavour, baby. Give a little glare 'cause I'm a shady little lady. Ducking from the bad on my little Lilypad. Show me a smile, don't be afraid of me. All I want is the world to be happy."
   },
   {
     id: 10,
     name: "Here's My Heart",
     year: "2021",
-    imageURL: "images/heres_my_heart-cover.jpg",
+    imageURL: "images/heres_my_heart-cover.png",
     lyrics: "There have been a lot of times I didn’t do what I wanted to. I kept myself in line because I’m good 'n true. But they don’t know what’s in my mind, or more importantly, what’s in my heart. But there’s no wrong in looking, I don’t have to keep my eyes apart. Why’d the universe make you for me, if love’s not in our stars and I don’t believe in destiny? Why’d the universe make me for everyone, when I don’t have no scene to paint my foreground on? Here’s my heart, come on and take it - promise you won't break it. I’d like to pay a little homage in this song just for you. There’s a different kind of care you gave in all I went through. Just like you, I'm not generally the type to be understood, but I know my heart's full of good. Take it or leave it, as you would."
   },
   {
     id: 11,
     name: "The Mediator",
     year: "2022",
-    imageURL: "images/the_mediator-cover.jpg",
+    imageURL: "images/the_mediator-cover.png",
     lyrics: "They say that “nothing lasts forever”, but that’s just because they’re scared that it’s true. Why would you set yourself up for disappointment, when you could claim that you knew it all along? So, apparently “nothing good is free”, and I’d agree if I hadn’t spent so much energy. Carb coins of crystal spent on my happiness. Protein pennies spent on your deadbeat friendship. I-N-F-P, my brain and my heart got a hold on me. Eyes blue, skies white, silver birch haze and I’m blonde again, it’s nice to know that nothing’s really changed. He sang that “nothing really matters”, and I listened harder than I thought I could do. Why would I be so dsperate for a point, when definition is limiting and the world is yours?"
   },
   {
     id: 12,
     name: "Girlhood",
     year: "2022",
-    imageURL: "images/girlhood-cover.jpg",
+    imageURL: "images/girlhood-cover.png",
     lyrics: "I know that you and me really wanna be seventeen (forever) but we got shit to do and the growing pains that we’re getting through (together) Are making us wiser, just try to hide her down (but she’ll keep sneaking in my dreams). What’s this thing with being afraid to get older (when we’re not even twenty). That’s the thing ‘bout being a girl, we’re all so intelligent, so misunderstood. Let’s just have fun, caught up in our Girlhood. I know all too damn well that there aren’t any words you can say to me (to make it better). Don’t let me forget I have a right to be in love with the world (if i wanna). I can’t cry, you just make me tired and I leave (kindness has no in between). What’s this thing with being afraid to drop it down (to drop my stupid guard down)."
   }
 ];
