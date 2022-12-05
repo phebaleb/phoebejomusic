@@ -3,8 +3,8 @@ const songs = [
     id: 0,
     name: "As The Night Turns Blue",
     year: "2020",
-    imageURL: "images/as_the_night_turns_blue-cover.jpg",
-    lyrics:  "I don’t feel like dying, I just feel like crying. Melancholy lifestyle, Metaphorical long mile. The sun has set and at last the birds flew, As the night turns blue. My fleeting mind is sighing, My greeting face is smiling. Spinning around meanwhile, Orbit garden sundial. The tiles crack in a discoloured hue, As the night turns blue. The papers keep on lying, The mindless keep on buying. Put your darling on trial, Down the softly lit aisle. My barbwire crown keeps thoughts in like glue, As the night turns blue. Electric cords are frying, Micro-waves are flying. Throw them in a pile, In a monitored file. Eyes turn red as sleep is overdue, As the night turns blue."
+    imageURL: "images/as_the_night_turns_blue-cover.png",
+    lyrics: "I don’t feel like dying, I just feel like crying. Melancholy lifestyle, Metaphorical long mile. The sun has set and at last the birds flew, As the night turns blue. My fleeting mind is sighing, My greeting face is smiling. Spinning around meanwhile, Orbit garden sundial. The tiles crack in a discoloured hue, As the night turns blue. The papers keep on lying, The mindless keep on buying. Put your darling on trial, Down the softly lit aisle. My barbwire crown keeps thoughts in like glue, As the night turns blue. Electric cords are frying, Micro-waves are flying. Throw them in a pile, In a monitored file. Eyes turn red as sleep is overdue, As the night turns blue."
   },
   {
     id: 1,
@@ -110,7 +110,7 @@ let songIsFound;
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
-searchButton.onclick = function() {
+searchButton.onclick = function () {
   filterSearchWord();
 };
 
@@ -150,11 +150,11 @@ function runSearch(string) {
       // Returns whatever song matches the search string
       generateSong(i);
       if (songsFoundNumber == 1) {
-      notifs.innerHTML = `
+        notifs.innerHTML = `
       <div class="alert">Your search: <strong>"${string}"</strong> returned 1 result</div>
       `;
-    } else if (songsFoundNumber > 1) {
-    notifs.innerHTML = `
+      } else if (songsFoundNumber > 1) {
+        notifs.innerHTML = `
     <div class="alert">Your search: <strong>"${string}"</strong> returned ${songsFoundNumber} results</div>
     `;
       }
@@ -168,7 +168,7 @@ function runSearch(string) {
 
 const filterButton = document.getElementById('year-filter-button');
 
-filterButton.onclick = function() {
+filterButton.onclick = function () {
   filterYear();
 };
 
@@ -178,8 +178,8 @@ function filterYear() {
   // Grabs everything inside of the query selector brackets
   let checkedBoxes = document.querySelectorAll("input[type=checkbox]:checked");
 
-// Declare an array to contain all the checked years
-const selectedYears = [];
+  // Declare an array to contain all the checked years
+  const selectedYears = [];
 
   for (let i = 0; i < checkedBoxes.length; i++) {
     // Logging with .value will grab the value set for the checkbox in the html
@@ -271,7 +271,7 @@ function generateSong(index) {
 
 function generateButtons() {
   for (let i = 0; i < modalButtonArray.length; i++) {
-    modalButtonArray[i].onclick = function() {
+    modalButtonArray[i].onclick = function () {
       let currentButtonId = this.id;
       openLyricsModal(currentButtonId);
     };
@@ -298,12 +298,12 @@ function openLyricsModal(id) {
 }
 
 // for (let i = 0; i < modalButtonArray.length; i++) {
-  modalButtonArray.onclick = function() {
-    openLyricsModal();
-  };
+modalButtonArray.onclick = function () {
+  openLyricsModal();
+};
 // }
 
-closeButton.onclick = function() {
+closeButton.onclick = function () {
   closeLyricsModal();
 };
 
