@@ -1,0 +1,1309 @@
+/* COLOUR PALETTE LIBRARY */
+/* Pink #ffc5d9 */
+/* Blue #c2f2d0 */
+/* Cream #fdf5c9 */
+/* Sand #ffcb85 */
+/* Red #eb5a46 */
+/* Brown #503715 */
+
+/* Pop up message showing which years were filtered */
+.alert {
+  background-color: #ffcb85;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0 0 5px 5px;
+  border: solid 3px #eb5a46;
+  color: #eb5a46;
+  font-family: 'DM Serif Display', serif;
+  font-size: 36px;
+  position: absolute;
+  top: 360px;
+  left: 85px;
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+/* Makes the pop up message disappear after 5s */
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+body {
+  background-color: #fdf5c9;
+  background-image: url("../images/text-background.png");
+  background-position: center;
+  background-size: contain;
+}
+
+h1 {
+  font-size: 134px;
+  margin-top: 345px;
+  margin-bottom: 0px;
+  text-align: center;
+  /* font-family: 'Smooch', cursive; */
+  font-family: 'DM Serif Display', serif;
+  color: #fdf5c9;
+  /* text-shadow: 1px 2px black; */
+  position: fixed;
+  z-index: -98;
+}
+
+h4 {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'DM Serif Display', serif;
+  color: #503715;
+  text-align: center;
+  text-shadow: #fdf5c9;
+}
+
+h5 {
+  visibility: hidden;
+}
+
+h6 {
+  color: #503715;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'DM Serif Display', serif;
+}
+
+#result {
+  width: 100%;
+  margin-top: 400px;
+  margin-bottom: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#banner {
+  width: 100%;
+  height: 540px;
+  background-color: #fdf5c9;
+  background-image: url("../images/banner-bw.png");
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  mix-blend-mode: multiply;
+}
+
+#nav {
+  background-color: #fdf5c9;
+  padding: 40px 20px 20px 20px;
+  border-radius: 0 0 10px 10px;
+  border-right: 5px solid #ffcb85;
+  border-bottom: 5px solid #ffcb85;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -65px;
+  margin-left: 1%;
+  width: 94%;
+  height: 150px;
+  box-shadow: 3px 3px 10px #503715;
+}
+
+#logo {
+  visibility: hidden;
+}
+
+#search-box-mobile {
+  background-color: #c2f2d0;
+  padding: 40px 20px 20px 20px;
+  border-radius: 0 0 10px 10px;
+  border-right: 5px solid #ffcb85;
+  border-bottom: 5px solid #ffcb85;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: -96;
+  top: 170px;
+  width: 78.5%;
+  margin-left: 0;
+  height: 120px;
+  box-shadow: 3px 3px 10px #503715;
+}
+
+#search-box {
+  visibility: hidden;
+}
+
+#search-input {
+  width: 65%;
+  height: 60px;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 10%;
+  padding: 10px;
+  border: 2px solid #503715;
+  border-radius: 10px;
+}
+
+.bi-search-heart {
+  font-size: 62px;
+  color: #eb5a46;
+  position: relative;
+  top: 36px;
+  left: 26px;
+  margin-right: 30px;
+  transition: all 0.5s ease;
+}
+
+.bi-search-heart:hover {
+  color: #c2f2d0;
+  cursor: pointer;
+}
+
+/* This holds the YEAR FILTER inputs */
+#filter-checkbox {
+  height: 75px;
+  width: 80%;
+  margin-top: -500px;
+  margin-left: 30px;
+}
+
+/* YEAR FILTER text */
+label {
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
+  color: #503715;
+}
+
+.checkbox-inputs {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+}
+
+/* YEAR FILTER button */
+.button2 {
+  background: #eb5a46;
+  padding: 20px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 80px;
+  left: 68%;
+  border-top: 6px solid #ffcb85;
+  border-left: 6px solid #ffcb85;
+  border-right: 6px solid #c2f2d0;
+  border-bottom: 6px solid #c2f2d0;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.5s ease;
+  font-family: 'DM Serif Display', serif;
+  color: #fdf5c9;
+  font-size: 36px;
+}
+
+.button2 i {
+  font-size: 30px;
+}
+
+
+#background {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 300px;
+  background-color: #fdf5c9;
+  background-image: url("../images/background-bw.png");
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -96;
+  mix-blend-mode: multiply;
+}
+
+#background-backdrop {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 300px;
+  background-color: #fdf5c9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -98;
+}
+
+.song-profile {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  background-color: #fdf5c9;
+  background-image: url("../images/song-profile-background.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  border-right: 5px solid #ffcb85;
+  border-bottom: 5px solid #ffcb85;
+  box-shadow: 3px 3px 10px #503715;
+}
+
+
+/* Lyrics button */
+.button {
+  background: #c2f2d0;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 31%;
+  margin-bottom: 25px;
+  border-top: 8px solid #eb5a46;
+  border-left: 8px solid #eb5a46;
+  border-right: 8px solid #ffcb85;
+  border-bottom: 8px solid #ffcb85;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.5s ease;
+  font-family: 'DM Serif Display', serif;
+  color: #503715;
+  font-size: 60px;
+}
+
+.bi-arrow-right {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+#lyrics-modal {
+  width: 86%;
+  height: 1700px;
+  background-color: #ffcb85;
+  background-image: url('../images/lyrics-modal-background.png');
+  background-size: cover;
+  border-radius: 10px;
+  border-right: 5px solid #c2f2d0;
+  border-bottom: 5px solid #c2f2d0;
+  box-shadow: 3px 3px 10px #503715;
+  position: fixed;
+  left: 6%;
+  top: 100px;
+  visibility: hidden;
+}
+
+#lyrics-modal.active {
+  visibility: visible;
+}
+
+.lyrics {
+  padding: 80px 80px 70px 80px;
+  font-size: 42px;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+}
+
+.bi-x-circle-fill {
+  font-size: 60px;
+  color: #eb5a46;
+  position: absolute;
+  top: 26px;
+  right: 2px;
+  margin-right: 30px;
+  transition: all 0.5s ease;
+}
+
+.bi-x-circle-fill:hover {
+  color: #c2f2d0;
+  cursor: pointer;
+}
+
+.filter-arrow {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#submit-button {
+  background-color: #44b3ae;
+  position: fixed;
+  bottom: 100px;
+  left: 43%;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 3px 3px 10px #503715;
+}
+
+.content-wrapper {
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #c2f2d0;
+  border-top: 3px solid #ffcb85;
+  position: fixed;
+  /* top: 11550px; */
+  bottom: 0;
+  left: 0;
+  z-index: -90;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  padding-top: 45px;
+  margin-left: -85px;
+}
+
+#social-logo1 {
+  width: 150px;
+  height: 150px;
+  box-shadow: none;
+  padding: 20px;
+  margin-left: 32px;
+  transition: all 0.3s ease;
+}
+
+#social-logo2 {
+  width: 175px;
+  height: 120px;
+  margin-top: 14px;
+  box-shadow: none;
+  padding: 20px;
+  margin-left: 32px;
+  transition: all 0.3s ease;
+}
+
+#social-logo1:hover,
+#social-logo2:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+/* MOBILE MEDIUM */
+
+@media screen and (min-width: 375px) {
+
+  #background {
+    height: 900px;
+    margin-bottom: 50px;
+  }
+
+  #background-backdrop {
+    height: 900px;
+    margin-bottom: 50px;
+  }
+
+  #lyrics-modal {
+    width: 86%;
+    height: 1450px;
+    background-color: #ffcb85;
+    border-radius: 10px;
+    border-right: 5px solid #c2f2d0;
+    border-bottom: 5px solid #c2f2d0;
+    box-shadow: 3px 3px 10px #503715;
+    position: fixed;
+    left: 6%;
+    top: 100px;
+    visibility: hidden;
+  }
+
+  .lyrics {
+    padding: 80px 80px 70px 80px;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+  }
+}
+
+/* MOBILE LARGE */
+
+@media screen and (min-width: 510px) {
+
+  #background {
+    height: 900px;
+    margin-bottom: -50px;
+  }
+
+  #background-backdrop {
+    height: 900px;
+    margin-bottom: -50px;
+  }
+
+  #lyrics-modal {
+    width: 86%;
+    height: 1300px;
+    background-color: #ffcb85;
+    border-radius: 10px;
+    border-right: 5px solid #c2f2d0;
+    border-bottom: 5px solid #c2f2d0;
+    box-shadow: 3px 3px 10px #503715;
+    position: fixed;
+    left: 6%;
+    top: 100px;
+    visibility: hidden;
+  }
+
+  .lyrics {
+    padding: 80px 80px 70px 80px;
+    font-size: 38px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+  }
+}
+
+
+/* LAPTOP SMALL */
+
+@media screen and (min-width: 1024px) {
+
+  /* Pop up message showing which years were filtered */
+  .alert {
+    background-color: #ffcb85;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: solid 2px #eb5a46;
+    color: #eb5a46;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    animation: hideAnimation 0s ease-in 5s;
+    animation-fill-mode: forwards;
+  }
+
+  /* Makes the pop up message disappear after 5s */
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  body {
+    height: 1000px;
+    background-color: #fdf5c9;
+    background-image: url("../images/text-background.png");
+    background-position: center;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 120px;
+    margin-top: 98px;
+    margin-bottom: 0px;
+    text-align: center;
+    /* font-family: 'Smooch', cursive; */
+    font-family: 'DM Serif Display', serif;
+    color: #fdf5c9;
+    /* text-shadow: 1px 2px black; */
+    position: fixed;
+    z-index: -98;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+    text-align: center;
+    text-shadow: #fdf5c9;
+  }
+
+  h5 {
+    visibility: visible;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+    text-align: center;
+    text-shadow: #fdf5c9;
+  }
+
+  h6 {
+    color: #503715;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  #result {
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #banner {
+    width: 100%;
+    height: 280px;
+    background-color: #fdf5c9;
+    background-image: url("../images/banner-bw.png");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    mix-blend-mode: multiply;
+  }
+
+  #nav {
+    background-color: #fdf5c9;
+    padding: 40px 20px 20px 20px;
+    border-radius: 0 0 10px 10px;
+    border-right: 5px solid #ffcb85;
+    border-bottom: 5px solid #ffcb85;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -65px;
+    margin-left: 1%;
+    width: 94%;
+    height: 80px;
+    box-shadow: 3px 3px 10px #503715;
+  }
+
+  #logo {
+    visibility: visible;
+    box-shadow: none;
+    width: 100px;
+    height: 100px;
+    margin-top: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #search-box-mobile {
+    visibility: hidden;
+  }
+
+  #search-box {
+    visibility: visible;
+    width: 30%;
+    text-align: right;
+    margin-top: -15px;
+    margin-left: 4%;
+  }
+
+  #search-input {
+    width: 60%;
+    height: 15px;
+    padding: 8px;
+    margin-left: 0;
+    border: 1px solid #503715;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .bi-search-heart {
+    font-size: 34px;
+    color: #eb5a46;
+    position: relative;
+    top: 6px;
+    left: 16px;
+    margin-right: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .bi-search-heart:hover {
+    color: #c2f2d0;
+    cursor: pointer;
+  }
+
+  /* This holds the YEAR FILTER inputs */
+  #filter-checkbox {
+    height: 75px;
+    width: 50%;
+    margin-top: -5px;
+    margin-left: 30px;
+  }
+
+  #year-form {
+    height: 45px;
+    width: 80%;
+  }
+
+  /* YEAR FILTER text */
+  label {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+  }
+
+  .checkbox-inputs {
+    width: 18px;
+    height: 18px;
+    margin-right: 18px;
+  }
+
+  /* YEAR FILTER button */
+  .button2 {
+    background: #eb5a46;
+    padding: 6px;
+    margin-top: -40px;
+    margin-left: -170px;
+    border-top: 3px solid #ffcb85;
+    border-left: 3px solid #ffcb85;
+    border-right: 3px solid #c2f2d0;
+    border-bottom: 3px solid #c2f2d0;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-family: 'DM Serif Display', serif;
+    color: #fdf5c9;
+    font-size: 24px;
+  }
+
+  .button2:hover {
+    color: #503715;
+    cursor: pointer;
+    background: #c2f2d0;
+    border-top: 3px solid #eb5a46;
+    border-left: 3px solid #eb5a46;
+    border-right: 3px solid #ffcb85;
+    border-bottom: 3px solid #ffcb85;
+  }
+
+  .button2:hover i {
+    margin-left: 20px;
+  }
+
+  i {
+    transition: 0.5s ease;
+  }
+
+  #background {
+    width: 100%;
+    height: 1800px;
+    background-color: #fdf5c9;
+    background-image: url("../images/background-bw.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 365px;
+    left: 0;
+    z-index: -96;
+    mix-blend-mode: multiply;
+  }
+
+  #background-backdrop {
+    width: 100%;
+    height: 1800px;
+    background-color: #fdf5c9;
+    position: absolute;
+    top: 365px;
+    left: 0;
+    z-index: -98;
+  }
+
+  .song-profile {
+    width: 28%;
+    margin: 20px;
+    background-color: #fdf5c9;
+    background-image: url("../images/song-profile-background.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    border-right: 5px solid #ffcb85;
+    border-bottom: 5px solid #ffcb85;
+    box-shadow: 3px 3px 10px #503715;
+  }
+
+
+  /* Lyrics button */
+  .button {
+    background: #c2f2d0;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 30%;
+    margin-bottom: 25px;
+    border-top: 3px solid #eb5a46;
+    border-left: 3px solid #eb5a46;
+    border-right: 3px solid #ffcb85;
+    border-bottom: 3px solid #ffcb85;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+    font-size: 20px;
+  }
+
+  .button:hover {
+    color: #fdf5c9;
+    cursor: pointer;
+    background: #eb5a46;
+    border-top: 3px solid #ffcb85;
+    border-left: 3px solid #ffcb85;
+    border-right: 3px solid #c2f2d0;
+    border-bottom: 3px solid #c2f2d0;
+  }
+
+  .button:hover i {
+    margin-left: 20px;
+  }
+
+  i {
+    transition: 0.5s ease;
+  }
+
+  .bi-arrow-right {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  #lyrics-modal {
+    width: 70%;
+    height: 500px;
+    background-color: #ffcb85;
+    border-radius: 10px;
+    border-right: 5px solid #c2f2d0;
+    border-bottom: 5px solid #c2f2d0;
+    box-shadow: 3px 3px 10px #503715;
+    position: fixed;
+    left: 15%;
+    top: 50px;
+    visibility: hidden;
+  }
+
+  #lyrics-modal.active {
+    visibility: visible;
+  }
+
+  .lyrics {
+    padding: 50px 120px 70px 120px;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+  }
+
+  .bi-x-circle-fill {
+    font-size: 32px;
+    color: #eb5a46;
+    position: absolute;
+    top: 26px;
+    right: 2px;
+    margin-right: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .bi-x-circle-fill:hover {
+    color: #c2f2d0;
+    cursor: pointer;
+  }
+
+  .filter-arrow {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  #submit-button {
+    background-color: #44b3ae;
+    position: fixed;
+    bottom: 100px;
+    left: 43%;
+  }
+
+  img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 10px #503715;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 140px;
+    background-color: #c2f2d0;
+    border-top: 3px solid #ffcb85;
+    position: absolute;
+    top: 2350px;
+    left: 0;
+    z-index: -90;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 378px;
+    height: 100px;
+    padding-top: 15px;
+    margin: 0 auto;
+  }
+
+  #social-logo1 {
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+    padding: 20px;
+    margin-left: 32px;
+    transition: all 0.3s ease;
+  }
+
+  #social-logo2 {
+    width: 50px;
+    height: 32px;
+    margin-top: 4px;
+    box-shadow: none;
+    padding: 20px;
+    margin-left: 32px;
+    transition: all 0.3s ease;
+  }
+
+  #social-logo1:hover,
+  #social-logo2:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+}
+
+/* LAPTOP LARGE */
+
+@media screen and (min-width: 1440px) {
+
+  /* Pop up message showing which years were filtered */
+  .alert {
+    background-color: #ffcb85;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: solid 2px #eb5a46;
+    color: #eb5a46;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    animation: hideAnimation 0s ease-in 5s;
+    animation-fill-mode: forwards;
+  }
+
+  /* Makes the pop up message disappear after 5s */
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  body {
+    height: 1000px;
+    background-color: #fdf5c9;
+    background-image: url("../images/text-background.png");
+    background-position: center;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 134px;
+    margin-top: 83px;
+    margin-bottom: 0px;
+    text-align: center;
+    /* font-family: 'Smooch', cursive; */
+    font-family: 'DM Serif Display', serif;
+    color: #fdf5c9;
+    /* text-shadow: 1px 2px black; */
+    position: fixed;
+    z-index: -98;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+    text-align: center;
+    text-shadow: #fdf5c9;
+  }
+
+  h5 {
+    visibility: visible;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+    text-align: center;
+    text-shadow: #fdf5c9;
+  }
+
+  h6 {
+    color: #503715;
+    font-size: 19px;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  #result {
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #banner {
+    width: 100%;
+    height: 280px;
+    background-color: #fdf5c9;
+    background-image: url("../images/banner-bw.png");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    mix-blend-mode: multiply;
+  }
+
+  #nav {
+    background-color: #fdf5c9;
+    padding: 40px 20px 20px 20px;
+    border-radius: 0 0 10px 10px;
+    border-right: 5px solid #ffcb85;
+    border-bottom: 5px solid #ffcb85;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -65px;
+    margin-left: 1%;
+    width: 94%;
+    height: 80px;
+    box-shadow: 3px 3px 10px #503715;
+  }
+
+  #logo {
+    visibility: visible;
+    box-shadow: none;
+    width: 100px;
+    height: 100px;
+    margin-top: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #search-box-mobile {
+    visibility: hidden;
+  }
+
+  #search-box {
+    visibility: visible;
+    width: 30%;
+    text-align: right;
+    margin-top: -15px;
+  }
+
+  #search-input {
+    width: 65%;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid #503715;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+
+  .bi-search-heart {
+    font-size: 34px;
+    color: #eb5a46;
+    position: relative;
+    top: 6px;
+    left: 16px;
+    margin-right: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .bi-search-heart:hover {
+    color: #c2f2d0;
+    cursor: pointer;
+  }
+
+  /* This holds the YEAR FILTER inputs */
+  #filter-checkbox {
+    height: 75px;
+    width: 48%;
+    margin-top: -5px;
+    margin-left: 30px;
+  }
+
+  #year-form {
+    height: 45px;
+    width: 60%;
+  }
+
+  /* YEAR FILTER text */
+  label {
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+  }
+
+  .checkbox-inputs {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+
+  /* YEAR FILTER button */
+  .button2 {
+    background: #eb5a46;
+    padding: 10px;
+    margin-top: -40px;
+    margin-left: -400px;
+    border-top: 3px solid #ffcb85;
+    border-left: 3px solid #ffcb85;
+    border-right: 3px solid #c2f2d0;
+    border-bottom: 3px solid #c2f2d0;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-family: 'DM Serif Display', serif;
+    color: #fdf5c9;
+    font-size: 24px;
+  }
+
+  .button2:hover {
+    color: #503715;
+    cursor: pointer;
+    background: #c2f2d0;
+    border-top: 3px solid #eb5a46;
+    border-left: 3px solid #eb5a46;
+    border-right: 3px solid #ffcb85;
+    border-bottom: 3px solid #ffcb85;
+  }
+
+  .button2:hover i {
+    margin-left: 20px;
+  }
+
+  i {
+    transition: 0.5s ease;
+  }
+
+  #background {
+    width: 100%;
+    height: 1800px;
+    background-color: #fdf5c9;
+    background-image: url("../images/background-bw.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 565px;
+    left: 0;
+    z-index: -96;
+    mix-blend-mode: multiply;
+  }
+
+  #background-backdrop {
+    width: 100%;
+    height: 1800px;
+    background-color: #fdf5c9;
+    position: absolute;
+    top: 565px;
+    left: 0;
+    z-index: -98;
+  }
+
+  .song-profile {
+    width: 27.5%;
+    margin: 30px;
+    background-color: #fdf5c9;
+    background-image: url("../images/song-profile-background.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    border-right: 5px solid #ffcb85;
+    border-bottom: 5px solid #ffcb85;
+    box-shadow: 3px 3px 10px #503715;
+  }
+
+
+  /* Lyrics button */
+  .button {
+    background: #c2f2d0;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 34%;
+    margin-bottom: 25px;
+    border-top: 3px solid #eb5a46;
+    border-left: 3px solid #eb5a46;
+    border-right: 3px solid #ffcb85;
+    border-bottom: 3px solid #ffcb85;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-family: 'DM Serif Display', serif;
+    color: #503715;
+    font-size: 20px;
+  }
+
+  .button:hover {
+    color: #fdf5c9;
+    cursor: pointer;
+    background: #eb5a46;
+    border-top: 3px solid #ffcb85;
+    border-left: 3px solid #ffcb85;
+    border-right: 3px solid #c2f2d0;
+    border-bottom: 3px solid #c2f2d0;
+  }
+
+  .button:hover i {
+    margin-left: 20px;
+  }
+
+  i {
+    transition: 0.5s ease;
+  }
+
+  .bi-arrow-right {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  #lyrics-modal {
+    width: 76%;
+    height: 550px;
+    background-color: #ffcb85;
+    border-radius: 10px;
+    border-right: 5px solid #c2f2d0;
+    border-bottom: 5px solid #c2f2d0;
+    box-shadow: 3px 3px 10px #503715;
+    position: fixed;
+    left: 12%;
+    top: 50px;
+    visibility: hidden;
+  }
+
+  #lyrics-modal.active {
+    visibility: visible;
+  }
+
+  .lyrics {
+    padding: 70px 140px 70px 140px;
+    font-size: 24px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+  }
+
+  .bi-x-circle-fill {
+    font-size: 32px;
+    color: #eb5a46;
+    position: absolute;
+    top: 26px;
+    right: 2px;
+    margin-right: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .bi-x-circle-fill:hover {
+    color: #c2f2d0;
+    cursor: pointer;
+  }
+
+  .filter-arrow {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  #submit-button {
+    background-color: #44b3ae;
+    position: fixed;
+    bottom: 100px;
+    left: 43%;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 10px #503715;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 140px;
+    background-color: #c2f2d0;
+    border-top: 3px solid #ffcb85;
+    position: absolute;
+    top: 2550px;
+    /* position: fixed;
+bottom: 0; */
+    left: 0;
+    z-index: -90;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 378px;
+    height: 100px;
+    padding-top: 15px;
+    margin: 0 auto;
+  }
+
+  #social-logo1 {
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+    padding: 20px;
+    margin-left: 32px;
+    transition: all 0.3s ease;
+  }
+
+  #social-logo2 {
+    width: 50px;
+    height: 32px;
+    margin-top: 4px;
+    box-shadow: none;
+    padding: 20px;
+    margin-left: 32px;
+    transition: all 0.3s ease;
+  }
+
+  #social-logo1:hover,
+  #social-logo2:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+}
